@@ -35,7 +35,7 @@ func (b *Bdiscord) maybeGetLocalAvatar(msg *config.Message) string {
 
 		member, err := b.getGuildMemberByNick(msg.Username)
 		if err != nil {
-			return ""
+			return "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
 		}
 
 		return member.User.AvatarURL("")
