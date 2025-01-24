@@ -35,7 +35,7 @@ func (b *Bdiscord) maybeGetLocalAvatar(msg *config.Message) string {
 
 		member, err := b.getGuildMemberByNick(msg.Username)
 		if err != nil {
-			return "https://cdn4.cdn-telegram.org/file/SFedrE_Jdbcxlrzd-KPtxxgS0YX_SrM0wz7WikCJr75xftgTuNHgHRMj9npCbVSmgDaaxbkh9EyI1Xo3XlO_tv-rXa8m5BLjGogrlxIH5mkcgrt53qA71pgrqmu3JCTgK-0aP7p6Emfh08sNmLCD83iPdQmn_hhHKmcmsamCJ7axNsyl07eu4b_bqV3OUFUv4vtQxWtQXsHxLrk6AN-gZOnx7RGxXwlZdOkrR36_U2u-aosC9xM4c0pMtc-bGVPMPQJ1cOcxblN_mKH8dUQMcxhPy647aqVst6Nka_QLjiVGIDx50DT4neHh36F4SwjLItJ7uErcbtI88mo_fY2bpw.jpg"
+			return "http://127.0.0.1:1984/telegram/" + msg.Username + ".jpg"
 		}
 
 		return member.User.AvatarURL("")
