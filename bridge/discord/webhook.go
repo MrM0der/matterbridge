@@ -35,7 +35,7 @@ func (b *Bdiscord) maybeGetLocalAvatar(msg *config.Message) string {
 
 		member, err := b.getGuildMemberByNick(msg.Username)
 		if err != nil {
-			return "http://127.0.0.1:1984/telegram/" + msg.Username + ".jpg"
+			return "http://127.0.0.1:1984/telegram/komilunka.jpg"
 		}
 
 		return member.User.AvatarURL("")
